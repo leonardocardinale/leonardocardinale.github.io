@@ -1,0 +1,73 @@
+project:
+  type: website 
+  resources:
+    - assets/**
+  render:
+    - index.qmd
+    #- about.qmd
+    - about1/**
+    - notes/**
+    - contact/**
+    - code/**
+    - PhD/**
+    - cv/*
+    - doc/*
+    - flags/*    
+website:
+  title: ""
+  site-url: "/"
+  page-navigation: true
+  page-footer: ""
+  navbar:
+    left:
+      - text: "Home"
+        href: /index.html
+    right:
+      - text: "About"
+        href: /about1/index.html
+      - text: "Curriculum Vitae"
+        href: /cv/cv-en.pdf
+      - text: "Publications"
+        href: https://inspirehep.net/authors/2860811
+      - text: "Research"
+        href: /PhD/index.html
+      - text: "Notes"
+        href: /notes/index.html
+      - text: "Code"
+     #   href: /code/index.html
+        href: https://github.com/Leonardo-Cardinale-Research
+      - text: "Contact"
+        href: /contact/index.html
+     # - text: "Français"
+     #   href: /fr/index.html
+     # - text: "Ελληνικά"
+     #   href: /el/index.html
+     # - text: "Italiano"
+     #   href: /it/index.html
+     # - text: "<img src='/flags/fr.svg' alt='Français' style='height:20px;'>"
+     #   href: /fr/index.html
+     # - text: "<img src='/flags/gr.svg' alt='Ελληνικά' style='height:20px;'>"
+     #   href: /el/index.html
+     # - text: "<img src='/flags/it.svg' alt='Italiano' style='height:20px;'>"
+     #   href: /it/index.html
+      - text: "<img src='/flags/fr.svg' alt='Français' style='height:20px;'>"
+        href: "#lang-fr"
+      - text: "<img src='/flags/gr.svg' alt='Ελληνικά' style='height:20px;'>"
+        href: "#lang-el"
+      - text: "<img src='/flags/it.svg' alt='Italiano' style='height:20px;'>"
+        href: "#lang-it"
+
+
+
+    
+format:
+  html:
+    theme: [solar, solar-custom.scss]
+    body-attrs: 'data-bs-theme="dark"'
+    include-in-header: base.html
+    include-after-body: _includes/lang-switch.html
+    
+
+lang: en
+
+

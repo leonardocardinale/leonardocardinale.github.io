@@ -1,0 +1,46 @@
+<script>
+document.addEventListener("click", function (e) {
+  const a = e.target.closest('a');
+  if (!a) return;
+
+  const href = a.getAttribute("href") || "";
+  const hashMatch = href.match(/^#lang-(en|fr|el|it)$/);
+
+  let imgLang = null;
+  const img = a.querySelector('img[src*="flags/"]');
+  if (img) {
+    const src = img.getAttribute("src") || "";
+    const m = src.match(/(?:\.\/|\/)flags\/([a-zA-Z-]+)\.svg$/);
+    if (m) {
+      const code = m[1].toLowerCase();
+      if (["en", "us", "gb"].includes(code)) imgLang = "en";
+      else if (code === "fr") imgLang = "fr";
+      else if (["gr", "el"].includes(code)) imgLang = "el";
+      else if (code === "it") imgLang = "it";
+    }
+  }
+
+  const targetLang = hashMatch ? hashMatch[1] : imgLang;
+  if (!targetLang) return;
+
+  e.preventDefault();
+
+  const prefixes = { en: "", fr: "/fr", el: "/el", it: "/it" };
+
+  function normalize(path) {
+    let p = path.startsWith("/") ? path : "/" + path;
+    if (p.endsWith("/")) p += "index.html";
+    return p;
+  }
+  function stripLangPrefix(path) {
+    const m = path.match(/^\/(fr|el|it)(\/.*)?$/);
+    return normalize(m ? (m[2] || "/") : path);
+  }
+
+  const current = window.location.pathname;
+  const rest = stripLangPrefix(current);
+  const targetUrl = (targetLang === "en") ? rest : prefixes[targetLang] + rest;
+
+  window.location.href = targetUrl;
+});
+</script>

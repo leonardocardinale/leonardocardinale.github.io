@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+$body-color: #e9eef1 !default;     // lighter body text
+$headings-color: #f8f9fa !default; // brighter headings
+$link-color: #9bdfff !default;
+$link-hover-color: #c2eeff !default;
+
+/* Don’t highlight language switchers as active */
+.navbar .nav-link[href="/fr/index.html"].active,
+.navbar .nav-link[href="/el/index.html"].active,
+.navbar .nav-link[href="/it/index.html"].active,
+.navbar .nav-link[href="/index.html"].active {
+  color: inherit !important;
+  opacity: 0.8;
+}
+
+/* Hide the default brand title so only our left nav shows */
+.navbar-brand { display: none !important; }
+
+body {
+  background-image: url("/assets/background.jpeg"); // <-- note the leading slash
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+// Optional: keep content readable
+main.content {
+  background-color: rgba(255, 255, 255, 0.85); // Slight white overlay
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+main.content {
+  background-color: rgba(0, 0, 0, 0.4); /* darker translucent black */
+  padding: 1rem;
+  border-radius: 8px;
+  color: #f4f1ee; /* warm off-white for text */
+}
+
+main.content a:hover {
+  color: #ffbb4d; /* slightly stronger on hover */
+}
+
+main.content h1, 
+main.content h2, 
+main.content h3 {
+  color: #ffffff; /* keep headings pure white */
+}

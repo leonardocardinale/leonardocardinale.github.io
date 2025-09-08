@@ -1,0 +1,31 @@
+---
+title: About
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.12.0
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+<p align="center">
+  <img src="/assets/Greece pic.jpg" alt="Leonardo Sotiris Cardinale" width="200">
+</p>
+
+
+# Welcome!
+
+I’m Leonardo — a PhD student in theoretical high energy physics at the *Laboratoire de Physique de l'École Normale Supérieure in Paris* (LPENS). My work is conducted within the *Fields, Gravity and Strings* group, under the supervision of Miguel Paulos and as part of the [FunBootS](https://sites.google.com/view/funboots/home) project. Most days I’m thinking about quantum field theory, anti-de Sitter spacetime, and other things that are as mysterious as they are fun to draw on blackboards.
+
+I’m French by birth, Greek from my mother, and American from my father (if you’re wondering about my name, it comes from the Italian-American side of the family). I grew up speaking French, English, and Greek. Later I added Italian — which I’m very comfortable with — and Spanish, which, despite studying for twice as many years, I speak a little less confidently.
+
+Before physics took over, I spent a lot of time on stage — acting in French and English, performing amateur musical theater, and playing piano. I’m still a language-learning addict and have a soft spot for ancient history — whether that’s finishing the latest non-fiction book I’ve picked up or stopping mid-walk to read an inscription.
+
+I’ve set up this website to archive the work I did during my master’s, collect useful notes I’ve written over the last couple of years, and start my PhD on a good footing. Some notes or code may still be rough around the edges, and there are surely typos or small mistakes. If you spot anything, feel free to [reach out](/contact/index.html)!
+
+

@@ -1,0 +1,30 @@
+---
+title: Chi sono
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.12.0
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+<p align="center">
+  <img src="/assets/Greece pic.jpg" alt="Leonardo Sotiris Cardinale" width="200">
+</p>
+
+# Benvenuti!
+
+Mi chiamo Leonardo — dottorando in fisica teorica delle alte energie al *Laboratoire de Physique de l’École Normale Supérieure di Parigi* (LPENS). Lavoro all’interno del gruppo *Campi, Gravità e Stringhe*, sotto la supervisione di Miguel Paulos, nell'ambito del progetto [FunBootS](https://sites.google.com/view/funboots/home). La maggior parte del tempo penso alla teoria quantistica dei campi, allo spazio-tempo anti-de Sitter e ad altre questioni tanto misteriose quanto divertenti da scrivere alla lavagna.  
+
+Sono francese di nascita, greco da parte di madre e americano da parte di padre (se ti stai chiedendo l’origine del mio nome, viene dal ramo italoamericano della famiglia paterna). Sono cresciuto parlando francese, inglese e greco. Più tardi ho aggiunto l’italiano — lingua in cui mi sento molto a mio agio — e lo spagnolo, che parlo con un po’ meno sicurezza nonostante l’abbia studiato per il doppio degli anni.  
+
+Prima che la fisica prendesse il sopravvento, ho passato molto tempo sul palco — recitando in francese e in inglese, partecipando a musical amatoriali e suonando il pianoforte. Resto appassionato di lingue e ho un debole per la storia antica — sia che si tratti di finire l’ultimo libro di storia che ho iniziato a leggere, sia di fermarmi lungo la strada per leggere una targa storica o un pannello informativo.  
+
+Ho creato questo sito per archiviare il lavoro che ho svolto durante la magistrale, raccogliere appunti utili scritti negli ultimi anni e iniziare il dottorato con il piede giusto. Alcuni appunti o pezzi di codice possono essere ancora un po’ grezzi, e sicuramente ci saranno refusi o piccoli errori. Se noti qualcosa, sentiti libero di [contattarmi](/it/contact/index.html)!
+
+

@@ -1,0 +1,172 @@
+---
+title: ''
+title-block-style: none
+page-layout: full
+body-classes: home
+format:
+  html:
+    toc: false
+    css: home.css
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.12.0
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+::: {.welcome-hero}
+::: {.welcome-card}
+
+<div class="welcome-name" role="heading" aria-level="1">Leonardo Sotiris Cardinale</div>
+<div class="welcome-subtitle">Fisico Teorico</div>
+
+<!-- Label is now plain HTML; script only fills .latest-cite -->
+<div class="latest">
+  <strong>Ultima pubblicazione:</strong>
+  <span class="latest-cite">Loading…</span>
+</div>
+
+:::
+:::
+
+<script>
+(function () {
+  const AUTHOR_ID = 2860811;
+  const citeEl = document.querySelector(".latest-cite"); // only fill this span
+  if (!citeEl) return;
+
+  // One-time cleanup: old cache that contained the label
+  try {
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith(`inspire_latest_${AUTHOR_ID}_hep_cite_v1`)) {
+        localStorage.removeItem(k);
+      }
+    });
+  } catch {}
+
+  // New cache key: citation-only (no label inside)
+  const CACHE_KEY = `inspire_latest_${AUTHOR_ID}_citeonly_v2`;
+
+  // Try cache (6h)
+  try {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (cached) {
+      const { ts, html } = JSON.parse(cached);
+      if (Date.now() - ts < 6 * 60 * 60 * 1000) {
+        // extra safety: strip any leading <strong>…</strong> if present
+        citeEl.innerHTML = (html || "").replace(/^\s*<strong>.*?<\/strong>\s*/i, "");
+        return;
+      }
+    }
+  } catch {}
+
+  const jget = (url) =>
+    fetch(url, { headers: { Accept: "application/json" } })
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); });
+
+  // Your original queries
+  const qById =
+    "https://inspirehep.net/api/literature" +
+    "?sort=mostrecent&size=1" +
+    "&q=" + encodeURIComponent(`authors.control_number:${AUTHOR_ID}`) +
+    "&fields=titles,authors.full_name,publication_info,earliest_date,dois,arxiv_eprints,primary_arxiv_category";
+  const authorURL = `https://inspirehep.net/api/authors/${AUTHOR_ID}?fields=ids,name`;
+
+  function buildCitation(hit) {
+    const md = hit.metadata || {};
+    const id = hit.id;
+    const recordUrl = `https://inspirehep.net/literature/${id}`;
+
+    const authors = (md.authors || []).map(a => a.full_name).filter(Boolean);
+    const authorsText = authors.join("; ");
+    const title = md.titles?.[0]?.title || "Untitled";
+
+    const pubs = Array.isArray(md.publication_info) ? md.publication_info : [];
+    const j = pubs.find(p => p.journal_title) || pubs[0] || {};
+    const journal = j.journal_title || "";
+    const volume  = j.journal_volume || "";
+    const year    = j.year || (md.earliest_date || "").slice(0,4) || "";
+    const pages   =
+      (j.page_start && j.page_end && `${j.page_start}-${j.page_end}`) ||
+      j.page_start || j.artid || "";
+
+    let journalBlock = "";
+    if (journal) {
+      journalBlock = [journal, volume].filter(Boolean).join(" ");
+      if (year) journalBlock += ` (${year})`;
+      if (pages) journalBlock += ` ${pages}`;
+    } else if (year) {
+      journalBlock = `(${year})`;
+    }
+
+    const doi = md.dois?.[0]?.value || "";
+    const arx = md.arxiv_eprints?.[0]?.value || md.arxiv_eprints?.[0]?.eprint || "";
+    const cat = md.primary_arxiv_category?.term || md.arxiv_eprints?.[0]?.categories?.[0] || "";
+
+    const parts = [];
+    if (journalBlock) parts.push(journalBlock);
+    if (doi) parts.push(`doi:${doi}`);
+    if (arx) parts.push(`arXiv:${arx}${cat ? ` [${cat}]` : ""}`);
+
+    // ⟵ IMPORTANT: no label here; citation only
+    return (
+      `${authorsText}, ` +
+      `&ldquo;<a href="${recordUrl}" target="_blank" rel="noopener">${title}</a>&rdquo;` +
+      (parts.length ? `, <span>${parts.join(", ")}</span>` : "")
+    );
+  }
+
+  function renderFromData(data) {
+    const hit = data?.hits?.hits?.[0];
+    if (!hit) throw new Error("No results");
+    const html = buildCitation(hit);
+    citeEl.innerHTML = html;                         // fill only the span
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), html })); } catch {}
+  }
+
+  // Try control_number first; then BAI/exact name
+  jget(qById)
+    .then(d => {
+      if (d?.hits?.hits?.length) { renderFromData(d); return null; }
+      return jget(authorURL);
+    })
+    .then(authorData => {
+      if (!authorData) return null;
+      const amd = authorData.metadata || {};
+      const ids = Array.isArray(amd.ids) ? amd.ids : [];
+      const bai =
+        ids.find(x => (x.schema || x.source || "").toUpperCase() === "BAI")?.value ||
+        ids.map(x => x.value).find(v => typeof v === "string" && /\.\d+$/.test(v));
+      const exactName = amd.name?.value || "";
+
+      const queries = [];
+      if (bai) queries.push(`a ${bai}`);
+      if (exactName) queries.push(`ea ${exactName}`);
+
+      const tryNext = () => {
+        const q = queries.shift();
+        if (!q) throw new Error("No results for any query");
+        const url =
+          "https://inspirehep.net/api/literature" +
+          "?sort=mostrecent&size=1" +
+          "&q=" + encodeURIComponent(q) +
+          "&fields=titles,authors.full_name,publication_info,earliest_date,dois,arxiv_eprints,primary_arxiv_category";
+        return jget(url).then(d => {
+          if (d?.hits?.hits?.length) { renderFromData(d); return null; }
+          return tryNext();
+        });
+      };
+      return tryNext();
+    })
+    .catch(() => {
+      const authorUrl = `https://inspirehep.net/authors/${AUTHOR_ID}`;
+      citeEl.innerHTML = `<a href="${authorUrl}" target="_blank" rel="noopener">See my publications on INSPIRE</a>`;
+    });
+})();
+</script>

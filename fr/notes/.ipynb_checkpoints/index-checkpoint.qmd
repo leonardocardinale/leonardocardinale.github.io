@@ -1,0 +1,44 @@
+---
+title: Notes
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.12.0
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+## Stages de recherche
+
+#### Stage de M2 @ LPENS
+- [Hamiltonian truncation in long-range one-dimensional CFTs (rapport)](/doc/M2 report.pdf) - 2025
+- [Hamiltonian truncation in long-range one-dimensional CFTs (présentation)](/doc/M2 slides.pdf) - 2025
+
+#### Stage de M1 @ University of Turin, Department of Physics
+- [Conformal Defects in Nonlocal O(N )-invariant Theories (rapport)](/doc/M1 report.pdf) - 2024
+- [Conformal Defects in Nonlocal O(N )-invariant Theories (présentation)](/doc/M1 slides.pdf) - 2024
+
+#### Stage de recherche @ Inria Paris & Centre Automatique et Systèmes - Mines Paris
+- [Laying the Groundwork for Tensor Network Approaches to Lattice Yang-Mills Theory](/doc/Inria internship.pdf) - 2023
+
+#### Stage de recherche @ Oxford University, Department of Engineering Science
+- [Nuclear spin control in GaAs quantum dots via nuclear quadrupole resonance](/doc/Oxford internship.pdf) - 2023
+- [Affiche de conférence @ QUEST 2023 à Paris](/doc/Oxford poster.pdf) - 2023
+
+## Projets
+
+#### Projet bibliographique ENS M2 CFT
+- [Defect conformal field theory](/doc/DCFT project.pdf) - 2025
+
+#### Projet bibliographique ENS M1
+- [Conformal field theory and the long-range Ising Model (rapport)](/doc/Bibliographical project.pdf) - 2024
+- [Conformal field theory and the long-range Ising Model (présentation)](/doc/Bibliographical project slides.pdf) - 2024
+
+## Divers
+
+- [One-loop renormalization of gauge theory](/doc/QFT2.pdf) - 2025
