@@ -1,0 +1,88 @@
+/* Full-height centered hero */
+.welcome-hero {
+  min-height: calc(100vh - 60px); /* 60px ≈ navbar; tweak if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-name {
+  margin: 0 0 .35rem 0;
+  line-height: 1.1;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.welcome-subtitle {
+  margin: 0 0 1.1rem 0;
+  font-size: clamp(1.1rem, 2.3vw, 1.5rem);
+  font-weight: 600;
+  opacity: .9;
+}
+
+
+
+
+/* Latest blurb */
+.latest {
+  margin-top: .75rem;
+  font-size: clamp(.95rem, 1.8vw, 1.05rem);
+  opacity: .95;
+}
+
+/* Remove the big translucent page panel only on the home page */
+body.home .page-columns .content,
+body.home .quarto-title-block,
+body.home .quarto-title-block .quarto-title-banner {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* (keep your previous hero styles) */
+.welcome-hero {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-card {
+  text-align: center;
+  max-width: 900px;
+  width: min(900px, 92vw);
+  padding: clamp(1.75rem, 3vw, 3rem);
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.welcome-name {
+  margin: 0 0 .25rem 0;
+  line-height: 1.1;
+  font-size: clamp(2rem, 5.5vw, 3.5rem);
+  letter-spacing: .2px;
+}
+
+.welcome-subtitle {
+  margin: 0 0 1.25rem 0;
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+  opacity: .9;
+}
+
+.latest {
+  margin-top: .75rem;
+  font-size: clamp(.95rem, 1.8vw, 1.05rem);
+  opacity: .95;
+}
+

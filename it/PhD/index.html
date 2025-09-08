@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Ricerca</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2aaa411c471dc45dd290d5844d5eae57.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<base href="/">
+
+
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about1/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/cv-en.pdf"> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://inspirehep.net/authors/2860811"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../PhD/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes/index.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Leonardo-Cardinale-Research"> 
+<span class="menu-text">Code</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact/index.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../#lang-fr"> 
+<span class="menu-text"><img src="../../flags/fr.svg" alt="Français" style="height:20px;"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../#lang-el"> 
+<span class="menu-text"><img src="../../flags/gr.svg" alt="Ελληνικά" style="height:20px;"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../#lang-it"> 
+<span class="menu-text"><img src="../../flags/it.svg" alt="Italiano" style="height:20px;"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ricerca</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="panoramica" class="level2">
+<h2 class="anchored" data-anchor-id="panoramica">Panoramica</h2>
+<ul>
+<li>Studio le <strong>teorie quantistiche dei campi fortemente interagenti (QFT)</strong> — il quadro che unisce meccanica quantistica e relatività ristretta, e descrive le particelle come eccitazioni di campi sottostanti.<br>
+</li>
+<li>Il mio principale interesse riguarda le <strong>teorie conformi dei campi (CFT)</strong> — modelli altamente simmetrici che spesso governano la fisica alle grandi distanze o nei punti critici delle transizioni di fase.<br>
+</li>
+<li>Utilizzo la <strong>corrispondenza AdS<sub>2</sub>/CFT<sub>1</sub></strong> come un “ponte a doppio senso” tra QFT in uno spaziotempo curvo bidimensionale (AdS<sub>2</sub>) e CFT definite sul bordo unidimensionale di AdS<sub>2</sub>.<br>
+</li>
+<li>Il mio arsenale combina <strong>metodi moderni di bootstrap</strong> con <strong>tecniche classiche di QFT</strong>, come la teoria delle perturbazioni, la teoria dello scattering e il troncamento hamiltoniano.<br>
+</li>
+<li>Mi interesso anche ai <strong>difetti conformi</strong>, e ad approcci computazionali allo studio delle interazioni forti, come la <strong>teoria di gauge su reticolo</strong> e le <strong>reti tensoriali</strong>.</li>
+</ul>
+</section>
+<section id="ricerca-dottorale" class="level2">
+<h2 class="anchored" data-anchor-id="ricerca-dottorale">Ricerca dottorale</h2>
+<p>La mia ricerca riguarda la <strong>teoria quantistica dei campi (QFT)</strong> — il quadro che unisce meccanica quantistica e relatività ristretta. In questa prospettiva, le particelle sono “ondulazioni” o eccitazioni di campi sottostanti. La QFT è il linguaggio della fisica delle particelle, dove descrive le forze fondamentali della natura, ma compare anche in fisica della materia condensata, ad esempio nello studio della superconduttività o del magnetismo.</p>
+<p>Un principio guida è il <strong>gruppo di rinormalizzazione (RG)</strong>. Permette di seguire come una teoria cambia al variare della scala di energia — ingrandendo o riducendo lo “zoom”. Accade che teorie molto diverse ad alte energie (nell’ultravioletto, o UV) diventino simili a basse energie (nell’infrarosso, o IR). La teoria che emerge nell’IR è detta <em>punto fisso IR</em>. In molti casi fisicamente rilevanti, questi punti fissi sono <strong>teorie conformi dei campi (CFT)</strong> — QFT speciali invarianti a tutte le scale, o più precisamente invarianti sotto trasformazioni che preservano localmente gli angoli.</p>
+<p align="center">
+<img src="../../assets/Theory space.png" alt="Schema dello spazio delle teorie, che mostra i flussi RG tra teorie UV e punti fissi IR, spesso CFT" width="600">
+</p>
+<p>Una delle sfide centrali della QFT è comprendere le teorie <strong>fortemente interagenti</strong> — situazioni in cui le interazioni sono così intense che non possono essere trattate come piccole correzioni a un modello semplice. Non è un’eccezione rara: la forza nucleare forte che lega protoni e neutroni a bassa energia è fortemente interagente, così come molti sistemi di materia condensata. Poiché le CFT rappresentano spesso punti speciali nello “spazio delle teorie” e sono più vincolate matematicamente delle QFT generiche, costituiscono punti di partenza naturali per esplorare il regime fortemente interagente. Oltre a questo interesse teorico, le CFT hanno numerose applicazioni: descrivono i punti critici delle transizioni di fase, la superficie d’universo in teoria delle stringhe e forniscono il fondamento del <strong>principio olografico</strong>, a cui passo ora.</p>
+<hr>
+<section id="un-principio-olografico-ads2cft1" class="level3">
+<h3 class="anchored" data-anchor-id="un-principio-olografico-ads2cft1">Un principio olografico: AdS<sub>2</sub>/CFT<sub>1</sub></h3>
+<p>La formulazione più famosa — e probabilmente la più fruttuosa — del principio olografico è la <strong>corrispondenza AdS/CFT</strong>. Qui <em>AdS</em> indica lo <em>spaziotempo anti–de Sitter</em>, uno spaziotempo massimamente simmetrico a curvatura negativa. Può essere rappresentato come un “cilindro infinito”, il cui bordo corrisponde a spazio e tempo all’infinito, e la cui altezza rappresenta la direzione del tempo. Più fisicamente, è la geometria di un universo a curvatura negativa, privo di materia e radiazione, caratterizzato da una <strong>energia di vuoto negativa uniforme</strong>.</p>
+<p>La corrispondenza afferma che certe CFT definite su questo bordo siano <em>equivalenti</em> a QFT con gravità dinamica nel bulk di AdS. In altre parole, la stessa fisica può essere descritta o da una QFT al bordo, o da una QFT con gravità attivata nel volume. Da qui il termine “olografico”: la fisica del bulk, in dimensione superiore, è interamente codificata nella teoria al bordo, in meno dimensioni — come un ologramma che immagazzina un’immagine 3D su una superficie 2D. In modo sorprendente, questa dualità collega due problemi tra i più difficili: la QFT fortemente interagente e la gravità quantistica.</p>
+<a href="https://commons.wikimedia.org/wiki/File:AdS3.svg" title="Immagine originale da Wikipedia">
+<p align="center">
+<img src="../../assets/AdS3.png" alt="Schema della corrispondenza AdS/CFT, che mostra lo spaziotempo AdS e una CFT definita sul suo bordo cilindrico" width="400">
+</p>
+</a><p><a href="https://commons.wikimedia.org/wiki/File:AdS3.svg" title="Immagine originale da Wikipedia"></a></p>
+<p>Sebbene l’olografia abbia stimolato progressi in molte dimensioni, i casi ad alta dimensionalità restano tecnicamente complessi: le CFT duali sono spesso poco comprese e i risultati non perturbativi scarsi. Al contrario, gli <strong>scenari a bassa dimensionalità</strong> — come le CFT 1D o 2D — sono più accessibili, sia numericamente (meno gradi di libertà), sia analiticamente, ad esempio con il <em>bootstrap</em> analitico, che sfrutta simmetrie e coerenza interna per vincolare lo spazio delle teorie possibili. Nella mia ricerca mi concentro sul caso non banale più semplice: la corrispondenza AdS<sub>2</sub>/CFT<sub>1</sub>. Qui la CFT duale è unidimensionale e particolarmente adatta alle nuove tecniche di <strong>bootstrap funzionale analitico</strong> sviluppate dal mio <a href="https://sites.google.com/view/funboots/home">gruppo</a>, oltre che a strumenti classici della QFT come il troncamento hamiltoniano.</p>
+<hr>
+</section>
+<section id="strumenti-e-obiettivi" class="level3">
+<h3 class="anchored" data-anchor-id="strumenti-e-obiettivi">Strumenti e obiettivi</h3>
+<p>La corrispondenza AdS/CFT offre due prospettive complementari:<br>
+- Sul <strong>lato bulk</strong> (dentro AdS<sub>2</sub>): utilizzo strumenti standard della QFT come la teoria delle perturbazioni, la teoria dello scattering (metodi di matrice-S) e il troncamento hamiltoniano (un’approssimazione numerica che riduce la teoria a un insieme finito di stati). Questi metodi sono adatti a studiare le dinamiche lontane dai punti fissi e a seguire l’evoluzione delle teorie sotto deformazioni.<br>
+- Sul <strong>lato del bordo</strong> (la CFT<sub>1</sub>): posso applicare anch’io strumenti di QFT, ma ho in più accesso al <em>bootstrap</em> conforme — un metodo moderno e non perturbativo che si basa unicamente su simmetria e autoconsistenza per restringere lo spazio dei punti fissi possibili.</p>
+<p>Questi due punti di vista si completano. Il bootstrap vincola quali punti fissi conformi sono possibili, mentre i metodi di QFT mostrano come le teorie evolvono sotto deformazioni. Il mio obiettivo è usare entrambe le prospettive congiuntamente: capire come la dinamica fortemente interagente del bulk si codifichi nei dati della CFT al bordo e, reciprocamente, come la struttura della CFT illumini la dinamica della QFT.</p>
+<p>In breve: rivisitare problemi classici della teoria quantistica dei campi con strumenti moderni, e interpretare le strutture matematiche che emergono dal bootstrap e dall’olografia in termini fisici.</p>
+<hr>
+</section>
+</section>
+<section id="interessi-paralleli" class="level2">
+<h2 class="anchored" data-anchor-id="interessi-paralleli">Interessi paralleli</h2>
+<section id="difetti-conformi" class="level3">
+<h3 class="anchored" data-anchor-id="difetti-conformi">Difetti conformi</h3>
+<p>Mi interesso anche ai <strong>difetti conformi</strong> — tema del <a href="https://iopscience.iop.org/article/10.1088/1751-8121/adf788">mio primo articolo</a>. Un <em>difetto</em> è in generale un sottospazio a dimensionalità inferiore (linea, superficie o sottovarietà) che modifica una QFT. Ad esempio, in un reticolo di spin portato alla temperatura critica — descritto da una CFT — si può introdurre un difetto applicando un campo magnetico solo lungo una linea di spin. Il sistema risultante non è più invariante sotto l’intero gruppo conforme, ma se il difetto preserva la simmetria conforme <em>su di sé</em> (e la simmetria di rotazione intorno), si parla di <strong>teoria conforme con difetto (dCFT)</strong>.</p>
+<p>Dal punto di vista dell’RG, introdurre un difetto equivale a perturbare una teoria UV con un operatore localizzato, e seguire il flusso verso un nuovo punto fisso IR. I difetti diventano quindi sonde naturali dello <em>spazio delle teorie</em>: non solo arricchiscono il catalogo delle CFT, ma forniscono anche un modo controllato per esplorare nuove classi di universalità.</p>
+<p>Fisicamente, le dCFT compaiono in molti contesti: dalle brane e loro intersezioni in teoria delle stringhe, alle linee e ai loop di Wilson in teoria di gauge, fino a impurità magnetiche e difetti cristallini in materia condensata. Forniscono dunque un quadro unificante che collega fenomeni provenienti da ambiti apparentemente molto diversi.</p>
+<hr>
+</section>
+<section id="teoria-di-gauge-su-reticolo-e-reti-tensoriali" class="level3">
+<h3 class="anchored" data-anchor-id="teoria-di-gauge-su-reticolo-e-reti-tensoriali">Teoria di gauge su reticolo e reti tensoriali</h3>
+<p>Prima di lavorare sulle CFT, ho avuto una breve esperienza con la <strong>teoria di gauge su reticolo</strong> — il quadro non perturbativo standard per lo studio della <strong>QCD a bassa energia</strong>, una <strong>QFT fortemente interagente</strong>. In questo approccio, lo spaziotempo è discretizzato in una griglia: i quark occupano i siti, i gluoni sono associati ai legami, e si usano algoritmi di <strong>Monte Carlo</strong> per campionare configurazioni e calcolare osservabili. Questo metodo è stato estremamente efficace, specialmente nella QCD su reticolo, ma il costo computazionale cresce rapidamente con la dimensione del sistema, rendendo molti problemi inaccessibili.</p>
+<p>Un’alternativa promettente si basa sulle <strong>reti tensoriali</strong>, rappresentazioni compresse di stati quantistici molto grandi, già rivelatesi potenti in fisica della materia condensata. Invece di immagazzinare una quantità esponenziale di informazioni, le reti tensoriali catturano la struttura essenziale di uno stato in forma più compatta. In modo notevole, molti osservabili della teoria di gauge su reticolo possono essere riformulati in questo linguaggio, aprendo la strada all’uso di algoritmi efficienti sviluppati nella fisica dei molti corpi. È un settore di ricerca ancora molto attivo, con la speranza di rendere possibili domani calcoli che oggi sono inefficaci o addirittura fuori portata per la QCD su reticolo.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("click", function (e) {
+  const a = e.target.closest('a');
+  if (!a) return;
+
+  const href = a.getAttribute("href") || "";
+  const hashMatch = href.match(/^#lang-(en|fr|el|it)$/);
+
+  let imgLang = null;
+  const img = a.querySelector('img[src*="flags/"]');
+  if (img) {
+    const src = img.getAttribute("src") || "";
+    const m = src.match(/(?:\.\/|\/)flags\/([a-zA-Z-]+)\.svg$/);
+    if (m) {
+      const code = m[1].toLowerCase();
+      if (["en", "us", "gb"].includes(code)) imgLang = "en";
+      else if (code === "fr") imgLang = "fr";
+      else if (["gr", "el"].includes(code)) imgLang = "el";
+      else if (code === "it") imgLang = "it";
+    }
+  }
+
+  const targetLang = hashMatch ? hashMatch[1] : imgLang;
+  if (!targetLang) return;
+
+  e.preventDefault();
+
+  const prefixes = { en: "", fr: "/fr", el: "/el", it: "/it" };
+
+  function normalize(path) {
+    let p = path.startsWith("/") ? path : "/" + path;
+    if (p.endsWith("/")) p += "index.html";
+    return p;
+  }
+  function stripLangPrefix(path) {
+    const m = path.match(/^\/(fr|el|it)(\/.*)?$/);
+    return normalize(m ? (m[2] || "/") : path);
+  }
+
+  const current = window.location.pathname;
+  const rest = stripLangPrefix(current);
+  const targetUrl = (targetLang === "en") ? rest : prefixes[targetLang] + rest;
+
+  window.location.href = targetUrl;
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
