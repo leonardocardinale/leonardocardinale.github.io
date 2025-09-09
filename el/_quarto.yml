@@ -16,13 +16,13 @@ website:
         href: /el/index.html
     right:
       - text: "Σχετικά"
-        href: /el/about1/index.html
+        href: /el/about/index.html
       - text: "Βιογραφικό"
         href: /cv/cv-el.pdf
       - text: "Δημοσιεύσεις"
         href: https://inspirehep.net/authors/2860811
       - text: "Έρευνα"
-        href: /el/PhD/index.html
+        href: /el/research/index.html
       - text: "Σημειώσεις"
         href: /el/notes/index.html
       - text: "Κώδικας"

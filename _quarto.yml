@@ -5,11 +5,10 @@ project:
   render:
     - index.qmd
     #- about.qmd
-    - about1/**
+    - about/**
     - notes/**
     - contact/**
-    - code/**
-    - PhD/**
+    - research/**
     - cv/*
     - doc/*
     - flags/*    
@@ -24,13 +23,13 @@ website:
         href: /index.html
     right:
       - text: "About"
-        href: /about1/index.html
+        href: /about/index.html
       - text: "Curriculum Vitae"
         href: /cv/cv-en.pdf
       - text: "Publications"
         href: https://inspirehep.net/authors/2860811
       - text: "Research"
-        href: /PhD/index.html
+        href: /research/index.html
       - text: "Notes"
         href: /notes/index.html
       - text: "Code"

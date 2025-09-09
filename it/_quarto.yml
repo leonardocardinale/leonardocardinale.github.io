@@ -16,13 +16,13 @@ website:
         href: /it/index.html
     right:
       - text: "Chi sono"
-        href: /it/about1/index.html
+        href: /it/about/index.html
       - text: "Curriculum Vitae"
         href: /cv/cv-it.pdf
       - text: "Pubblicazioni"
         href: https://inspirehep.net/authors/2860811
       - text: "Ricerca"
-        href: /it/PhD/index.html
+        href: /it/research/index.html
       - text: "Appunti"
         href: /it/notes/index.html
       - text: "Codice"
