@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/doc/julia-mandelbrot.html</loc>
-    <lastmod>2025-09-08T17:09:18.483Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/MF vs 1D.html</loc>
-    <lastmod>2025-09-08T17:09:18.392Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Code 2/SU(2).html</loc>
-    <lastmod>2025-09-08T17:09:18.388Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Code 2/SU(N) Quadrature.html</loc>
-    <lastmod>2025-09-08T17:09:18.389Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Monte Carlo.html</loc>
-    <lastmod>2025-09-08T17:09:18.395Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Untitled.html</loc>
-    <lastmod>2025-09-08T17:09:18.404Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/VEGAS.html</loc>
-    <lastmod>2025-09-08T17:09:18.405Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Untitled1.html</loc>
-    <lastmod>2025-09-08T17:09:18.404Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/SU(3).html</loc>
-    <lastmod>2025-09-08T17:09:18.396Z</lastmod>
-  </url>
-  <url>
-    <loc>/fr/PhD/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.512Z</lastmod>
-  </url>
-  <url>
-    <loc>/PhD/index.html</loc>
+    <loc>/research/index.html</loc>
     <lastmod>2025-09-08T17:09:18.089Z</lastmod>
   </url>
   <url>
-    <loc>/fr/code/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.523Z</lastmod>
+    <loc>/fr/research/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.512Z</lastmod>
   </url>
   <url>
-    <loc>/code/index.html</loc>
+    <loc>/it/contact/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.548Z</lastmod>
+  </url>
+  <url>
+    <loc>/el/contact/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.498Z</lastmod>
+  </url>
+  <url>
+    <loc>/notes/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.562Z</lastmod>
+  </url>
+  <url>
+    <loc>/fr/notes/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.530Z</lastmod>
+  </url>
+  <url>
+    <loc>/it/about/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.542Z</lastmod>
+  </url>
+  <url>
+    <loc>/el/about/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.492Z</lastmod>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.535Z</lastmod>
+  </url>
+  <url>
+    <loc>/about/index.html</loc>
+    <lastmod>2025-09-09T12:09:33.276Z</lastmod>
+  </url>
+  <url>
+    <loc>/fr/about/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.518Z</lastmod>
+  </url>
+  <url>
+    <loc>/el/notes/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.505Z</lastmod>
+  </url>
+  <url>
+    <loc>/it/notes/index.html</loc>
+    <lastmod>2025-09-08T17:09:18.554Z</lastmod>
+  </url>
+  <url>
+    <loc>/contact/index.html</loc>
     <lastmod>2025-09-08T17:09:18.347Z</lastmod>
   </url>
   <url>
@@ -57,99 +61,11 @@
     <lastmod>2025-09-08T17:09:18.524Z</lastmod>
   </url>
   <url>
-    <loc>/contact/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.347Z</lastmod>
-  </url>
-  <url>
-    <loc>/it/notes/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.554Z</lastmod>
-  </url>
-  <url>
-    <loc>/el/notes/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.505Z</lastmod>
-  </url>
-  <url>
-    <loc>/fr/about1/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.518Z</lastmod>
-  </url>
-  <url>
-    <loc>/about1/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.328Z</lastmod>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.535Z</lastmod>
-  </url>
-  <url>
-    <loc>/el/about1/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.492Z</lastmod>
-  </url>
-  <url>
-    <loc>/it/about1/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.542Z</lastmod>
-  </url>
-  <url>
-    <loc>/fr/notes/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.530Z</lastmod>
-  </url>
-  <url>
-    <loc>/notes/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.562Z</lastmod>
-  </url>
-  <url>
-    <loc>/el/contact/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.498Z</lastmod>
-  </url>
-  <url>
-    <loc>/it/contact/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.548Z</lastmod>
-  </url>
-  <url>
-    <loc>/el/code/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.497Z</lastmod>
-  </url>
-  <url>
-    <loc>/it/code/index.html</loc>
-    <lastmod>2025-09-08T17:09:18.548Z</lastmod>
-  </url>
-  <url>
-    <loc>/el/PhD/index.html</loc>
+    <loc>/el/research/index.html</loc>
     <lastmod>2025-09-08T17:09:18.485Z</lastmod>
   </url>
   <url>
-    <loc>/it/PhD/index.html</loc>
+    <loc>/it/research/index.html</loc>
     <lastmod>2025-09-08T17:09:18.536Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Finite gauge theory.html</loc>
-    <lastmod>2025-09-08T17:09:18.390Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/SU3 Characters.html</loc>
-    <lastmod>2025-09-08T17:09:18.399Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/SU(N) Quadrature.html</loc>
-    <lastmod>2025-09-08T17:09:18.397Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/SU3_final.html</loc>
-    <lastmod>2025-09-08T17:09:18.401Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/SU(2).html</loc>
-    <lastmod>2025-09-08T17:09:18.396Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Code 2/Monte Carlo.html</loc>
-    <lastmod>2025-09-08T17:09:18.388Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Wilson loops.html</loc>
-    <lastmod>2025-09-08T17:09:18.406Z</lastmod>
-  </url>
-  <url>
-    <loc>/doc/Inria code/Mean field theory.html</loc>
-    <lastmod>2025-09-08T17:09:18.394Z</lastmod>
   </url>
 </urlset>

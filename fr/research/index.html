@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Επικοινωνία</title>
+<title>Recherche</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Επικοινωνία</h1>
+<h1 class="title">Recherche</h1>
 </div>
 
 
@@ -164,13 +164,68 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="vue-densemble" class="level2">
+<h2 class="anchored" data-anchor-id="vue-densemble">Vue d’ensemble</h2>
 <ul>
-<li>Επαγγελματικό email: <a href="mailto:leonardo.cardinale@phys.ens.fr">leonardo.cardinale@phys.ens.fr</a></li>
-<li>Προσωπικό email: <a href="mailto:leonardo.s.cardinale@gmail.com">leonardo.s.cardinale@gmail.com</a></li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/leonardo-cardinale-17b89424b/">Leonardo Cardinale</a></li>
+<li>J’étudie les <strong>théories quantiques des champs fortement couplées (QFT)</strong> — le cadre qui combine mécanique quantique et relativité restreinte, et décrit les particules comme des excitations de champs sous-jacents.<br>
+</li>
+<li>Mon principal centre d’intérêt est celui des <strong>théories conformes des champs (CFT)</strong> — des modèles très symétriques qui gouvernent souvent la physique aux grandes distances ou aux points critiques des transitions de phase.<br>
+</li>
+<li>J’utilise la <strong>correspondance AdS<sub>2</sub>/CFT<sub>1</sub></strong> comme un « pont à double sens » entre les QFT en espace-temps courbe (AdS<sub>2</sub>) et les CFT vivant sur son bord unidimensionnel.<br>
+</li>
+<li>Ma boîte à outils combine des <strong>méthodes modernes de bootstrap</strong> avec des <strong>techniques classiques de QFT</strong> comme la théorie des perturbations, la diffusion et la troncature hamiltonienne.<br>
+</li>
+<li>Je m’intéresse aussi aux <strong>défauts conformes</strong>, ainsi qu’aux approches numériques des interactions fortes comme la <strong>théorie de jauge sur réseau</strong> et les <strong>réseaux de tenseurs</strong>.</li>
 </ul>
+</section>
+<section id="recherche-doctorale" class="level2">
+<h2 class="anchored" data-anchor-id="recherche-doctorale">Recherche doctorale</h2>
+<p>Mes recherches portent sur la <strong>théorie quantique des champs (QFT)</strong> — le cadre qui unit mécanique quantique et relativité restreinte. Dans cette vision, les particules ne sont rien d’autre que des « ondulations » ou excitations de champs sous-jacents. La QFT est le langage de la physique des particules, où elle décrit les forces fondamentales de la nature, mais elle intervient aussi en physique de la matière condensée, par exemple dans l’étude de la supraconductivité ou du magnétisme.</p>
+<p>Un principe central est le <strong>groupe de renormalisation (RG)</strong>. Il permet de suivre l’évolution d’une théorie quand on change d’échelle d’énergie — en « zoomant » ou en « dézoomant ». On constate que des théories très différentes à haute énergie (dans l’ultraviolet, ou UV) peuvent se ressembler à basse énergie (dans l’infrarouge, ou IR). La théorie qui émerge dans l’IR est appelée <em>point fixe IR</em>. Dans beaucoup de cas d’intérêt, ces points fixes sont des <strong>théories conformes des champs (CFT)</strong> — des QFT spéciales invariantes à toutes les échelles, ou plus formellement invariantes sous des transformations qui préservent les angles localement.</p>
+<p align="center">
+<img src="../../assets/Theory space.png" alt="Schéma de l’espace des théories, montrant les flux RG reliant des théories UV à des points fixes IR, souvent des théories conformes des champs" width="600">
+</p>
+<p>Un défi majeur en QFT est de comprendre les théories <strong>fortement couplées</strong> — des situations où les interactions sont si intenses qu’on ne peut pas les traiter comme de petites corrections à un modèle simple. Ce n’est pas exotique : la force nucléaire forte qui lie protons et neutrons à basse énergie est fortement couplée, et il en va de même pour de nombreux systèmes en matière condensée. Comme les CFT correspondent souvent à des points particuliers de cet « espace des théories », et qu’elles sont mathématiquement plus contraintes que les QFT génériques, elles constituent des points de départ naturels pour explorer le régime fortement couplé. Au-delà de cet intérêt théorique, les CFT ont de nombreuses applications : elles décrivent les points critiques des transitions de phase, la surface d’univers en théorie des cordes, et servent de fondement au <strong>principe holographique</strong>, auquel je viens maintenant.</p>
+<hr>
+<section id="un-principe-holographique-ads2cft1" class="level3">
+<h3 class="anchored" data-anchor-id="un-principe-holographique-ads2cft1">Un principe holographique : AdS<sub>2</sub>/CFT<sub>1</sub></h3>
+<p>La formulation la plus célèbre — et sans doute la plus fructueuse — du principe holographique est la <strong>correspondance AdS/CFT</strong>. Ici, <em>AdS</em> désigne l’<em>espace-temps anti–de Sitter</em>, un espace-temps maximalement symétrique à courbure négative. On peut le représenter comme un « cylindre infini », dont le bord correspond à l’espace et au temps à l’infini, et dont la hauteur figure la direction du temps. Plus physiquement, c’est la géométrie d’un univers de courbure négative en l’absence de toute matière ou radiation, caractérisé par une <strong>énergie du vide négative uniforme</strong>.</p>
+<p>La correspondance affirme que certaines CFT définies sur ce bord sont <em>équivalentes</em> à des QFT avec gravité dynamique dans le bulk d’AdS. Autrement dit, la même physique peut être décrite soit par une théorie quantique des champs au bord, soit par une QFT avec gravité activée dans le volume. D’où le qualificatif « holographique » : la physique du bulk, en dimension plus élevée, est intégralement encodée dans la théorie du bord, en moins de dimensions — à l’image d’un hologramme qui encode une image 3D sur une surface 2D. De façon remarquable, cette dualité relie deux problèmes parmi les plus difficiles : la QFT fortement couplée et la gravité quantique.</p>
+<a href="https://commons.wikimedia.org/wiki/File:AdS3.svg" title="Image originale sur Wikipédia">
+<p align="center">
+<img src="../../assets/AdS3.png" alt="Schéma de la correspondance AdS/CFT, montrant l’espace-temps AdS avec une théorie conforme des champs définie sur son bord cylindrique" width="400">
+</p>
+</a><p><a href="https://commons.wikimedia.org/wiki/File:AdS3.svg" title="Image originale sur Wikipédia"></a></p>
+<p>Si l’holographie a inspiré des avancées dans de nombreuses dimensions, les cas de haute dimension restent techniquement complexes : les CFT duales y sont souvent mal comprises, et les résultats non perturbatifs plus rares. À l’inverse, les <strong>cas de basse dimension</strong> — comme les CFT 1D ou 2D — sont plus accessibles, que ce soit numériquement (moins de degrés de liberté) ou analytiquement, via le <em>bootstrap</em> analytique, qui exploite symétries et cohérence interne pour contraindre l’espace des théories possibles. Dans mes recherches, je me concentre sur le cas non trivial le plus simple : la correspondance AdS<sub>2</sub>/CFT<sub>1</sub>. Ici, la CFT duale est unidimensionnelle, et se prête particulièrement bien aux nouvelles techniques de <strong>bootstrap fonctionnel analytique</strong> développées par mon <a href="https://sites.google.com/view/funboots/home">groupe</a>, ainsi qu’à des outils classiques mais parfois négligés en QFT comme la troncature hamiltonienne.</p>
+<hr>
+</section>
+<section id="outils-et-objectifs" class="level3">
+<h3 class="anchored" data-anchor-id="outils-et-objectifs">Outils et objectifs</h3>
+<p>La correspondance AdS/CFT fournit deux perspectives complémentaires :<br>
+- Du côté du <strong>bulk</strong> (à l’intérieur d’AdS<sub>2</sub>) : j’utilise des outils standards de QFT tels que la théorie des perturbations, la théorie de la diffusion (méthodes de matrice S) et la troncature hamiltonienne (approximation numérique consistant à réduire la théorie à un ensemble fini d’états). Ces méthodes sont adaptées pour étudier la dynamique hors des points fixes et suivre l’évolution des théories sous déformation.<br>
+- Du côté du <strong>bord</strong> (la CFT<sub>1</sub>) : je peux appliquer les mêmes techniques de QFT, mais j’ai aussi accès au <em>bootstrap</em> conforme — une méthode moderne et non perturbative qui exploite uniquement symétrie et cohérence pour contraindre l’espace des points fixes possibles.</p>
+<p>Ces deux points de vue se complètent. Le <em>bootstrap</em> borne les points fixes conformes envisageables, tandis que les méthodes de QFT permettent de suivre les déformations qui les relient. Mon objectif est d’utiliser ces deux approches conjointement : comprendre comment la dynamique fortement couplée du bulk s’encode dans les données de la CFT de bord, et réciproquement, comment la structure de la CFT éclaire la dynamique de la QFT.</p>
+<p>En résumé : revisiter des problèmes classiques de théorie quantique des champs avec des outils modernes, tout en donnant une nouvelle lecture des structures mathématiques mises au jour par le <em>bootstrap</em> et l’holographie.</p>
+<hr>
+</section>
+</section>
+<section id="intérêts-connexes" class="level2">
+<h2 class="anchored" data-anchor-id="intérêts-connexes">Intérêts connexes</h2>
+<section id="défauts-conformes" class="level3">
+<h3 class="anchored" data-anchor-id="défauts-conformes">Défauts conformes</h3>
+<p>Je m’intéresse aussi aux <strong>défauts conformes</strong> — le sujet de <a href="https://iopscience.iop.org/article/10.1088/1751-8121/adf788">mon premier article</a>. Un <em>défaut</em> est, en général, un sous-espace de dimension inférieure (ligne, surface ou sous-variété) qui modifie une QFT. Par exemple, dans un réseau de spins à sa température critique — cadre décrit par une CFT — on peut introduire un défaut en appliquant un champ magnétique seulement le long d’une ligne de spins. Le système n’est alors plus invariant sous tout le groupe conforme, mais si le défaut préserve la symétrie conforme <em>sur lui-même</em> (et la symétrie de rotation autour), on obtient une <strong>théorie conforme des champs avec défaut (dCFT)</strong>.</p>
+<p>Du point de vue du RG, introduire un défaut revient à perturber une théorie UV par un opérateur localisé, puis à suivre le flot vers un nouveau point fixe IR. Les défauts sont ainsi des sondes naturelles de l’espace des théories : ils enrichissent le catalogue des CFT et offrent un cadre contrôlé pour explorer de nouvelles classes d’universalité.</p>
+<p>Les défauts apparaissent dans des contextes variés — des branes et leurs intersections en théorie des cordes, aux lignes et boucles de Wilson en théorie de jauge, jusqu’aux impuretés magnétiques et défauts cristallins en matière condensée. Ils forment donc un cadre unificateur reliant des phénomènes issus de domaines a priori très différents.</p>
+<hr>
+</section>
+<section id="théorie-de-jauge-sur-réseau-et-réseaux-de-tenseurs" class="level3">
+<h3 class="anchored" data-anchor-id="théorie-de-jauge-sur-réseau-et-réseaux-de-tenseurs">Théorie de jauge sur réseau et réseaux de tenseurs</h3>
+<p>Avant de travailler sur les CFT, j’ai eu une brève expérience avec la <strong>théorie de jauge sur réseau</strong> — le cadre non perturbatif standard pour étudier la <strong>QCD à basse énergie</strong>, une <strong>QFT fortement couplée</strong>. Dans cette approche, l’espace-temps est discrétisé en une grille : les quarks occupent les sites, les gluons sont portés par les liens, et des algorithmes de <strong>Monte Carlo</strong> servent à échantillonner des configurations et à calculer des observables. Cette méthode a été extrêmement fructueuse, notamment pour la QCD sur réseau, mais son coût computationnel croît rapidement avec la taille et la dimension du système, rendant de nombreux problèmes inaccessibles.</p>
+<p>Une alternative prometteuse repose sur les <strong>réseaux de tenseurs</strong>, qui offrent des représentations compactes d’états quantiques très grands et sont souvent utilisés en physique de la matière condensée. Plutôt que de stocker une quantité exponentielle d’informations, ils capturent la structure essentielle d’un état sous une forme plus économique. De façon remarquable, de nombreux observables de jauge sur réseau peuvent être reformulés dans ce cadre, ouvrant la voie à l’adaptation d’algorithmes efficaces issus de la physique des systèmes quantiques à plusieurs corps. Ce domaine reste très actif, avec l’espoir de rendre possibles demain des calculs aujourd’hui inefficaces, voire hors de portée, en QCD sur réseau.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
